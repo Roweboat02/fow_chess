@@ -1,0 +1,10 @@
+## FOW Chess
+main runs the game, consisting of two players and a FOWReferee (in model).
+The two players are an ai_player (rough mcts in ai_player)
+and a person (tkinter UI in human_player)
+
+All parties above communicate using BoardPacket and Move (game_states and basic_data respectively),
+BoardPacket (in game_state) is made from an internal game-state in FOWReferee, FOWChess (game_state).
+FOWChess which is distributed by FOWReferee.
+
+FOWChess and BoardPacket are aggregates of apis, functions and data types from basic_data and chess_apis.
